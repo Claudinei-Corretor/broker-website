@@ -81,7 +81,7 @@ header {
 .Banner {
     width: 100%;
     min-height: 26.2rem;
-    background-image: url('./public/banner.png');
+    background-image: url('/banner.png');
     background-size: cover;
     background-position: center;
     position: relative;
