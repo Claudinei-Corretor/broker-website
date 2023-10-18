@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/Header.js';
 import Services from '../components/Service.js';
+import { Analytics } from '@vercel/analytics/react';
 
 function HomePage() {
     return (
@@ -60,6 +61,8 @@ function HomePage() {
                     
                     
                 </section>
+
+                <Analytics />
 
                 
             </main> 
