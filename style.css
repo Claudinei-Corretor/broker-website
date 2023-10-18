@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color--one: #402E32;
+    --color--two: #F0F8E8;
+    --color--tree: #88674F;
+    --color--four: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--color--one);
+    font-family: Barlow Condensed;
+    height: 1400px;
+    max-width: 1366px;
+    margin: 0 auto;
+    font-size: 115%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.HeaderSide {
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+
+.HeaderSide button {
+    padding: 0.20rem .40rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.HeaderSide button:hover {
+    transition: 0.3s;
+    background-color: #dddddd;
+}
+
+.HeaderSide a {
+    color: var(--color--four);
+}
+
+.HeaderSide span {
+    font-size: 160%;
+}
+
+.Logo {
+    padding-top: .5rem;
+}
+
+.Whatsapp {
+    width: 1rem;
+}
+
+.OlxLogo {
+    width: 1.5rem;
+}
+#PageOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Banner {
+    width: 100%;
+    min-height: 26.2rem;
+    background-image: url('./public/banner.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.TextBanner {
+    align-items: center;
+    padding: 1rem;
+    max-width: 20rem;
+    margin-left: 3rem;
+    background-color: rgba(206, 197, 180, 0.23);
+    border-radius: 12px;
+    margin-top: 5rem;
+}
+
+.Button {
+    padding: 0.5rem 2rem;
+    background-color: var(--color--one);
+    color: var(--color--four);
+    border-radius: 12px;
+    font-size: large;
+    cursor: pointer;
+    margin: .2rem 0;
+}
+
+.Button:hover {
+    background-color: #302225;
+    transition: 0.3s;
+}
+
+#PageTwo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.SectionServices {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: var(--color--two);
+    padding: 1rem;
+    flex-wrap: nowrap;
+}
+
+.ServicesDescription {
+    justify-content: center;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#PageTwo li {
+    cursor: pointer;
+}
+
+#PageTree {
+    display: none;
+    padding: 1rem;
+    background-color: var(--color--four);
+}
+
+#PageTwo .Numero {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--color--one);
+}
+
+#PageTwo .Numero Button {
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: var(--color--four);
+    color:black;
+    cursor: pointer;
+}
+
+#PageTwo span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: .2rem;
+    
+}
+
+.Olx {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color--one);
+    cursor: pointer;
+}
+
+.Olx button {
+    padding: 1.09rem;
+    border-radius: 12px;
+    background-color: var(--color--four);
+    color:black;
+}
+
+.MainPageContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 927px) {
+    .Olx button {
+        padding: 1rem;
+    }
+    header {
+        display: block;
+        flex-direction: column;
+    }
+
+    .HeaderSide {
+        padding: .5rem 0;
+        justify-content: space-around;
+    }
+    
+    header .Numero {
+        display: none;
+    }
+
+
+    
+    .Banner {
+        min-height: 18.2rem;
+    }
+    
+    .TextBanner {
+        padding: 1rem;
+        max-width: 20rem;
+        margin: 2rem;
+    }
+    
+}
+@media screen and (max-width: 387px) {
+    .TextBanner {
+        background-color: rgba(211, 206, 196, 0.582);
+    }
+    .Logo img{
+        width: 100%;
+    }
+}
+a {
+    text-decoration-line: none;
+}
+
+@keyframes piscar {
+    0%, 30% {
+        color: green;
+    }
+    30%, 60% {
+        color: black;
+    }
+    60%, 100% {
+        color: green;
+    }
+}
+
+.AllBrazil {
+    animation: piscar 2s infinite;
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+    background-color: var(--color--two);
+}
