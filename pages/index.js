@@ -33,7 +33,7 @@ function HomePage() {
                     <Services />
 
                     <div className='AllBrazil'>
-                        <p>Atendimento em todo o Brasil atráves de agendamento</p>
+                        <p>Atendimento em todo o Brasil através de agendamento</p>
                     </div>
 
                     <div className='MainPageContact'>
