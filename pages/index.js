@@ -8,6 +8,7 @@ function HomePage() {
         <div>
             <Head>
                 <meta charSet='UTF-8' />
+                <meta name="google-site-verification" content="E8QxnBdggOFrD80GJ_3lrsGkTxCSxfQM8ASoIndxET0" />
                 <meta name="robots" content='index, follow' />
                 <meta name='description' content='Deseja Alugar, uma Avaliação Juridica, ou administração de seu imóvel? Compre e venda imóveis Rurais e Urbanos com facilidade. Fazendas, Chácaras, Sítios, Lotes ou Casas.'></meta>
                 <meta name='author' content=''></meta>
